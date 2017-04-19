@@ -8,6 +8,7 @@ the Rust program. But beware of the differences:
    line?
  * What happens when the column is not an integer? When it is negative?
  * What happens when a line contains less columns than requested?
+ * What if the input file does not end in a newline?
  * How much memory does it consume? What if the input file contains a long line?
 
 """
@@ -19,4 +20,4 @@ ifname = sys.argv[2]
 
 with open(ifname, 'r') as f:
     for line in f:
-        print(line.split(',')[column])
+        print(line.rstrip('\n').split(',')[column])
