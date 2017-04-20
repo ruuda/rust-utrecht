@@ -1,4 +1,4 @@
-#!/bin/env python3
+#!/usr/bin/env python3
 
 """
 A very simple Python implementation that is supposed to yield the same output as

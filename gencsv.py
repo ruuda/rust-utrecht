@@ -1,4 +1,4 @@
-#!/bin/env python3
+#!/usr/bin/env python3
 
 with open('/tmp/large.csv', 'w') as f:
     f.write('integer,divisible_by_3,divisible_by_7,comment\n')
