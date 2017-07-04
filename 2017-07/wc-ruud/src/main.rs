@@ -6,7 +6,6 @@ extern crate crossbeam;
 fn main() {
     let fname = args().skip(1).next().unwrap();
     let file = filebuffer::FileBuffer::open(&fname).unwrap();
-    file.prefetch(0, file.len());
     let count = count_words_parallel(&file);
 
     // Mirror the output of `wc -w`.

@@ -6,3 +6,7 @@ authors = ["Ruud van Asseldonk"]
 [dependencies]
 "filebuffer" = "0.2"
 "crossbeam" = "0.2"
+"memchr" = "1.0"
+
+[profile.release]
+panic = "abort"
